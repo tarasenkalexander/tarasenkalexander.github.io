@@ -1,0 +1,80 @@
+<html>
+
+<head>
+	<title>Digital schoolbook</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div>
+		aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+		<div>
+			<iframe id="pdf-js-viewer" src="/web/viewer.html?file=%2assets%2pdf%2Fmy-pdf-file.pdf" title="webviewer" frameborder="0" width="500" height="600"></iframe>
+		</div>
+		vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+		<!-- <div id="book" class="book">
+			<iframe id="pdf-js-viewer" class="schoolbook" src="/web/viewer.html?file=%2assets%2pdf%2Fmy-pdf-file.pdf" title="webviewer" frameborder="0"></iframe>
+		</div> -->
+		<!-- <div class="burger-div">
+			<a href="javascript:void(0)" onclick="openCloseNav()"><img class="burger-menu" src="nav-menu-icon.png"></a>
+			<div id="SidePanel" class="sidepanel">
+				<div class="toolSide">
+					<a href="javascript:void(0)" onclick="openBookmark()"><img src="sidebar-bookmark-icon.png"></a>
+					<a href="javascript:void(0)" onclick="openTools()"><img src="sidebar-tools-icon.png"></a>
+				</div>
+				<div class="detailSide">
+					<div id="Bookmark" class="bookmark">
+						<ul>
+							<li>обложка</li>
+							<li>страница 10</li>
+							<li>страница 20</li>
+						</ul>
+					</div>
+					<div id="Tools" class="tools">
+						<ul>
+							<li>Заметка</li>
+							<li>Текст</li>
+							<li>3D модель</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</div>
+</body>
+
+</html>
+
+<script>
+	function openCloseNav() {
+		if (document.getElementById("SidePanel").style.width == "20vw") {
+			document.getElementById("SidePanel").style.width = "0";
+		}
+		else {
+			document.getElementById("SidePanel").style.width = "20vw";
+		}
+	}
+
+	function openTools(){
+		closeBookmark();
+		document.getElementById("Tools").style.display = "block";
+	}
+
+	function closeTools(){
+		document.getElementById("Tools").style.display = "none";
+	}
+
+	function openBookmark(){
+		closeTools();
+		document.getElementById("Bookmark").style.display = "block";
+	}
+
+	function closeBookmark(){
+		document.getElementById("Bookmark").style.display = "none";
+	}
+
+	PDFObject.embed("ist.pdf", "#book")
+
+</script>

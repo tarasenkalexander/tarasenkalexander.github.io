@@ -1,0 +1,85 @@
+body {
+    background-color: #626262;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #222;
+}
+
+nav li p {
+    color: white;
+    margin-top: 17px;
+    font-size: 13pt;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.35);
+}
+
+.nav-img {
+    width: 28px;
+}
+
+.schoolbook-title {
+    margin-left: 50px;
+}
+
+.pages-counter {
+    margin-left: 210px;
+}
+
+.nav-sign{
+    margin-top: 13px;
+}
+
+.nav-minus{
+    margin-left: 220px;
+}
+
+.nav-plus{
+    margin-left: 7px;
+}
+
+.scale-percent{
+    margin-left: 10px;
+}
+
+.nav-arrow{
+    margin-left: 220px;
+}
+
+.schoolbook{
+    position: absolute;
+    top:10%;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* margin:100px 100px; width:50%; height:80% */
