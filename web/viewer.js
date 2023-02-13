@@ -54,7 +54,7 @@ exports.removeNullCharacters = removeNullCharacters;
 exports.roundToDivide = roundToDivide;
 exports.scrollIntoView = scrollIntoView;
 exports.watchScroll = watchScroll;
-const DEFAULT_SCALE_VALUE = "auto";
+const DEFAULT_SCALE_VALUE = "page-fit";
 exports.DEFAULT_SCALE_VALUE = DEFAULT_SCALE_VALUE;
 const DEFAULT_SCALE = 1.0;
 exports.DEFAULT_SCALE = DEFAULT_SCALE;
@@ -621,7 +621,7 @@ const defaultOptions = {
     kind: OptionKind.VIEWER
   },
   externalLinkTarget: {
-    value: 0,
+    value: 2,
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   historyUpdateUrl: {
@@ -1014,7 +1014,7 @@ class PDFLinkService {
       pageNumber
     });
   }
-  addLinkAttributes(link, url, newWindow = false) {
+  addLinkAttributes(link, url, newWindow = true) {
     addLinkAttributes(link, {
       url,
       target: newWindow ? LinkTarget.BLANK : this.externalLinkTarget,
@@ -1271,7 +1271,7 @@ class SimpleLinkService {
   }
   async goToDestination(dest) {}
   goToPage(val) {}
-  addLinkAttributes(link, url, newWindow = false) {
+  addLinkAttributes(link, url, newWindow = true) {
     addLinkAttributes(link, {
       url,
       enabled: this.externalLinkEnabled
