@@ -1,0 +1,138 @@
+@media print  {
+  a:after {
+    content: attr(href);
+    display: none;
+  }
+  table {width:100% !important;}
+
+  .ovwlgd{width:100% !important;}
+  .ovwbtn{display: none;}
+  .divcol{display: none;}
+  .pagination{display: none;}
+  #letters-panel{display: none !important;}
+  #filterrow{display: none;}
+  #captionrow{display: table-row !important;}
+}
+
+
+body{
+	margin: 35px 0 0 0;
+}
+h3{
+    display: block;
+    width: 100%;
+    padding: 0;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+#map_canvas{
+    height: 400px;
+    width: 430px;
+}
+.navbar{
+    z-index: 10001;
+}
+.contact_photo{
+    position: absolute;
+    right: 0;
+    z-index: 10000;
+    border: 2px solid #fff;
+}
+
+.table-striped tr:first-child th{
+ background-color: #cfcfcf !important;
+}
+
+.table-striped tbody tr th{
+ vertical-align: middle;
+}
+
+.table-striped tbody tr td{
+ vertical-align: middle;
+}
+
+.table-forms {
+ width: 50%;
+}
+.table-forms tbody tr td input:[type=checkbox]{
+ border: 0px;
+}
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background-color: #dddddd;
+  cursor: pointer;
+}
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.divcol{    
+    width: 100%;
+}
+.divcolleft{    
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+}
+.divcolright{    
+    width: 50%;
+    margin-left: 50%;
+    padding-left: 10px;
+}
+.divfooter{
+    clear: left;
+    min-height: 50px;
+}
+.ovwlgd{
+    width: 70%;
+    float: left;
+}
+.ovwbtn{
+    margin-left: 70%;
+}
+
+
+.prevnext{
+  width: 55px;
+	font-weight: bold;
+}
+.btnpage{
+  width: 140px;
+  text-align: center;
+}
+
+.noclick{
+  color: #fff !important;
+}
+.noclick:hover{
+  background-color: #fff !important;
+}
+
+
+
+.login input[type=text], input[type=password] {
+  margin-top: 10px;
+  padding-left: 5px;
+  border-radius: 6px;
+}
+
+.filter-panel{
+  display: none;
+}
+
+.liniya{
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+#captionrow{display: none}
+
+#copyright {font-size: 10px; font-weight: bold; }
